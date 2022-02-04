@@ -1,88 +1,72 @@
-﻿// P1_stack_with_getMin.cpp : 此檔案包含 'main' 函式。程式會於該處開始執行及結束執行。
-//
-
-#include <iostream>
+﻿#include <iostream>
 #include <stack>
 #include <stdlib.h>
 
 using namespace std;
 
-template <typename T> class TwoStacksQueue
+template <typename T> class StackWithGetMin
 {
 private:
-   stack<T> stack_push;
-   stack<T> stack_pop;
+   stack<T> stack_data;
+   stack<T> stack_min;
 
 public:
-   TwoStacksQueue() {
-      this->stack_push = stack<T>();
-      this->stack_pop = stack<T>();
+   StackWithGetMin() {
+      this->stack_data = stack<T>();
+      this->stack_min = stack<T>();
    }
 
    T pop() {
-      if (this->stack_push.empty() && this->stack_pop.empty()) {
+      if (this->stack_data.empty()) {
          throw runtime_error("Error: The stack is empty.");
       }
-      if (this->stack_pop.empty()) {
-         while (!stack_push.empty()) {
-            stack_pop.push(stack_push.top());
-            stack_push.pop();
-         }
+      T t = this->stack_data.top();
+      this->stack_data.pop();
+      if (t == this->getMin()) {
+         this->stack_min.pop();
       }
-      T t = stack_pop.top();
-      stack_pop.pop();
       return t;
    }
 
-   T peek() {
-      if (this->stack_push.empty() && this->stack_pop.empty()) {
+   T top() {
+      if (this->stack_data.empty()) {
          throw runtime_error("Error: The stack is empty.");
       }
-      if (this->stack_pop.empty()) {
-         while (!stack_push.empty()) {
-            stack_pop.push(stack_push.top());
-            stack_push.pop();
-         }
-      }
-      T t = stack_pop.top();
-      return t;
+      return this->stack_data.top();
    }
 
    void push(T t) {
-      this->stack_push.push(t);
+      if (this->stack_min.empty() || t <= this->getMin()) {
+         this->stack_min.push(t);
+      }
+      this->stack_data.push(t);
+   }
+
+   T getMin() {
+      if (this->stack_min.empty()) {
+         throw runtime_error("Error: The stack is empty.");
+      }
+      else {
+         return this->stack_min.top();
+      }
    }
 };
 
 int main()
 {
-   TwoStacksQueue<int> mystack = TwoStacksQueue<int>();
+   StackWithGetMin<int> mystack = StackWithGetMin<int>();
    cout << "Push array:" << endl;
-   for (int i = 0; i < 5; i++) {
-      int t = rand() % 10;
-      mystack.push(t);
-      cout << t << ' ';
+   for (int i = 0; i < 10; i++) {
+      mystack.push(rand() % 10);
+      cout << mystack.top() << ' ' << mystack.getMin() << endl;
    }
-   cout << endl;
 
-   cout << "Pop array:" << endl;
-   for (int i = 0; i < 4; i++) {
-      cout << mystack.pop() << ' ';
+   cout << "Pop stack:" << endl;
+   for (int i = 0; i < 10; i++) {
+      cout << mystack.top() << ' ' << mystack.getMin() << endl;
+      mystack.pop();
    }
-   cout << endl;
-
-   cout << "Push array:" << endl;
-   for (int i = 0; i < 5; i++) {
-      int t = rand() % 10;
-      mystack.push(t);
-      cout << t << ' ';
-   }
-   cout << endl;
-
-   cout << "Pop array:" << endl;
-   for (int i = 0; i < 5; i++) {
-      cout << mystack.pop() << ' ';
-   }
-   cout << endl;
+   return 0;
 }
 
 // 執行程式: Ctrl + F5 或 [偵錯] > [啟動但不偵錯] 功能表
