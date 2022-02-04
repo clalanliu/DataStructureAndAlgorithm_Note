@@ -7,14 +7,14 @@
 
 using namespace std;
 
-template <typename T> class stack_with_getMin
+template <typename T> class StackWithGetMin
 {
 private:
    stack<T> stack_data;
    stack<T> stack_min;
 
 public:
-   stack_with_getMin() {
+   StackWithGetMin() {
       this->stack_data = stack<T>();
       this->stack_min = stack<T>();
    }
@@ -57,7 +57,7 @@ public:
 
 int main()
 {
-   stack_with_getMin<int> mystack = stack_with_getMin<int>();
+   StackWithGetMin<int> mystack = StackWithGetMin<int>();
    cout << "Push array:" << endl;
    for (int i = 0; i < 10; i++) {
       mystack.push(rand() % 10);
