@@ -8,7 +8,7 @@
 |[第1章](https://github.com/clalanliu/Data_Structure_And_Algorithm_Solution_Note/tree/main/CPP_Implementation/Ch_1)| 
 |      |[設計一個有getMin功能的棧](https://github.com/clalanliu/Data_Structure_And_Algorithm_Solution_Note/tree/main/CPP_Implementation/Ch_1/P1_stack_with_getMin)
 |      |[由兩個棧組成的隊列](https://github.com/clalanliu/Data_Structure_And_Algorithm_Solution_Note/tree/main/CPP_Implementation/Ch_1/P2_two_stacks_queue)
-|      |如何僅用遞歸函數和棧操作逆序一個棧
+|      |[如何僅用遞歸函數和棧操作逆序一個棧](https://github.com/clalanliu/Data_Structure_And_Algorithm_Solution_Note/tree/main/CPP_Implementation/Ch_1/P3_reverse_stack_recursively)
 |      |貓狗隊列
 |      |用一個棧實現另一個棧的排序
 |      |用棧來求解漢諾塔問題
