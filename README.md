@@ -10,8 +10,8 @@
 |      |[由兩個棧組成的隊列](https://github.com/clalanliu/Data_Structure_And_Algorithm_Solution_Note/tree/main/CPP_Implementation/Ch_1/P2_two_stacks_queue)
 |      |[如何僅用遞歸函數和棧操作逆序一個棧](https://github.com/clalanliu/Data_Structure_And_Algorithm_Solution_Note/tree/main/CPP_Implementation/Ch_1/P3_reverse_stack_recursively)
 |      |[貓狗隊列](https://github.com/clalanliu/Data_Structure_And_Algorithm_Solution_Note/tree/main/CPP_Implementation/Ch_1/P4_animalShelter)
-|      |用一個棧實現另一個棧的排序
-|      |用棧來求解漢諾塔問題
+|      |[用一個棧實現另一個棧的排序](https://github.com/clalanliu/Data_Structure_And_Algorithm_Solution_Note/tree/main/CPP_Implementation/Ch_1/P5_sort_stack_by_stack)
+|      |[用棧來求解漢諾塔問題](https://github.com/clalanliu/Data_Structure_And_Algorithm_Solution_Note/tree/main/CPP_Implementation/Ch_1/P6_tower_of_hanoi_using_stack)
 |      |生成窗口最大值數組
 |      |單調棧結構
 |      |求最大子矩陣的大小
