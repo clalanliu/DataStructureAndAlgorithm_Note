@@ -17,8 +17,7 @@
 |      |求最大子矩陣的大小
 |      |最大值減去最小值小於或等於num的子數組數量
 |第2章 |
-|      |可見的山峰對數量
-|      |打印兩個有序鏈表的公共部分
+|      |[打印兩個有序鏈表的公共部分](https://github.com/clalanliu/Data_Structure_And_Algorithm_Solution_Note/tree/main/CPP_Implementation/Ch_2/P1_print_common_part_of_two_sorted_list)
 |      |在單鏈表和雙鏈表中刪除倒數第K個節點
 |      |刪除鏈表的中間節點和a/b處的節點
 |      |反轉單向和雙向鏈表
