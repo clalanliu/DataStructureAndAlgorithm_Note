@@ -12,7 +12,7 @@
 |      |[貓狗隊列](https://github.com/clalanliu/Data_Structure_And_Algorithm_Solution_Note/tree/main/CPP_Implementation/Ch_1/P4_animalShelter)
 |      |[用一個棧實現另一個棧的排序](https://github.com/clalanliu/Data_Structure_And_Algorithm_Solution_Note/tree/main/CPP_Implementation/Ch_1/P5_sort_stack_by_stack)
 |      |[用棧來求解漢諾塔問題](https://github.com/clalanliu/Data_Structure_And_Algorithm_Solution_Note/tree/main/CPP_Implementation/Ch_1/P6_tower_of_hanoi_using_stack)
-|      |生成窗口最大值數組
+|      |[生成窗口最大值數組](https://github.com/clalanliu/Data_Structure_And_Algorithm_Solution_Note/tree/main/CPP_Implementation/Ch_1/P7_sliding_window_maximum)
 |      |單調棧結構
 |      |求最大子矩陣的大小
 |      |最大值減去最小值小於或等於num的子數組數量
