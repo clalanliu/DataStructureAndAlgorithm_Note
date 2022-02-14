@@ -2,10 +2,84 @@
 //
 
 #include <iostream>
+#include <vector>
+#include <algorithm>
+
+template<typename T>
+class Node
+{
+public:
+   T data;
+   Node* next;
+
+   Node(T d) {
+      data = d;
+      next = NULL;
+   }
+};
+
+template<typename T>
+class NodeList
+{
+private:
+   Node<T>* head;
+   Node<T>* current;
+public:
+   NodeList() {
+      head = NULL;
+      current = head;
+   }
+   Node<T>* begin() {
+      return head;
+   }
+   void push(T d) {
+      if (head == NULL) {
+         head = new Node<T>(d);
+         current = head;
+      }
+      current->next = new Node<T>(d);
+      current = current->next;
+   }
+   void pop_last(int index) {
+      Node<T>* fast = head;
+      Node<T>* slow = head;
+      for (; index >= 0; index--) {
+         fast = fast->next;
+      }
+      while (fast->next != NULL) {
+         fast = fast->next;
+         slow = slow->next;
+      }
+      Node<T>* tmp = slow->next->next;
+      delete slow->next;
+      slow->next = tmp;
+   }
+};
+
 
 int main()
 {
-    std::cout << "Hello World!\n";
+   NodeList<int> A;
+   size_t vector_length = 20;
+   for (size_t i = 0; i < vector_length; i++) {
+      A.push(rand() % 20);
+   }
+   
+   std::cout << std::endl << "List A:" << std::endl;
+   auto current = A.begin();
+   for (size_t i = 0; i < vector_length; i++) {
+      std::cout << current->data << ' ';
+      current = current->next;
+   }
+   std::cout << std::endl << "Remove 5th last:" << std::endl;
+   A.pop_last(5);
+
+   current = A.begin();
+   for (size_t i = 0; i < vector_length - 1; i++) {
+      std::cout << current->data << ' ';
+      current = current->next;
+   }
+
 }
 
 // 執行程式: Ctrl + F5 或 [偵錯] > [啟動但不偵錯] 功能表
