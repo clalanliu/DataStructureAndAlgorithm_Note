@@ -36,6 +36,7 @@ public:
       if (head == NULL) {
          head = new Node<T>(d);
          current = head;
+         return;
       }
       current->next = new Node<T>(d);
       current = current->next;
