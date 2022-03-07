@@ -26,7 +26,7 @@
 |      |[反轉部分單向鏈表](https://github.com/clalanliu/Data_Structure_And_Algorithm_Solution_Note/tree/main/CPP_Implementation/Ch_2/P5_reverse_part_of_linked_list)
 |      |[環形單鏈表的約瑟夫問題*](https://github.com/clalanliu/Data_Structure_And_Algorithm_Solution_Note/tree/main/CPP_Implementation/Ch_2/P6_Josephus_problem)
 |      |[判斷一個鏈表是否為回文結構](https://github.com/clalanliu/Data_Structure_And_Algorithm_Solution_Note/tree/main/CPP_Implementation/Ch_2/P7_palindrome_linked_list)
-|      |將單向鏈表按某值劃分成左邊小、中間相等、右邊大的形式
+|      |[將單向鏈表按某值劃分成左邊小、中間相等、右邊大的形式](https://github.com/clalanliu/Data_Structure_And_Algorithm_Solution_Note/tree/main/CPP_Implementation/Ch_2/P8_split_lineked_list_by_value)
 |      |覆制含有隨機指針節點的鏈表
 |      |兩個單鏈表生成相加鏈表
 |      |兩個單鏈表相交的一系列問題
