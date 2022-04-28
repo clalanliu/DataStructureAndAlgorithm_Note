@@ -43,7 +43,7 @@
 |      |[分別用遞歸和非遞歸方式實現二叉樹先序、中序和後序遍歷](https://github.com/clalanliu/Data_Structure_And_Algorithm_Solution_Note/tree/main/CPP_Implementation/Ch_3/P1_binary_tree_traversal)
 |      |打印二叉樹的邊界節點
 |      |如何較為直觀地打印二叉樹
-|      |二叉樹的序列化和反序列化
+|      |[二叉樹的序列化和反序列化](https://github.com/clalanliu/Data_Structure_And_Algorithm_Solution_Note/tree/main/CPP_Implementation/Ch_3/P4_binary_tree_and_string_conversion)
 |      |遍歷二叉樹的神級方法
 |      |在二叉樹中找到累加和為指定值的最長路徑長度
 |      |找到二叉樹中的最大搜索二叉子樹
